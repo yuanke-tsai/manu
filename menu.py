@@ -5,6 +5,7 @@ Created on Tue Mar 30 10:43:37 2021
 
 @author: yuanke.tsai
 """
+#新增商品陳列
 
 products = []
 while True:
@@ -19,7 +20,17 @@ while True:
     
     #solution 2
     #product = [name, price]
+    #products.append(product)
     
     #solution 3
     products.append([name, price])
-print(products)
+    
+i = 0
+r = 1
+while True:
+    if i < len(products):
+        print('No.', r, '，產品：', products[i][0], '，',products[i][1], '元')
+        i += 1
+        r += 1
+    else:
+        break
